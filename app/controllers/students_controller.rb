@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
     @student=set_student
     @student.active=!@student.active
     @student.save
-    binding.pry
     redirect_to student_path(@student)
   end
 
