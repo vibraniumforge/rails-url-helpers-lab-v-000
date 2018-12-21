@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate
     @student=set_student
-    @student.active=!@student.active 
+    @student.active=!@student.active
     redirect_to action: "show", id: params[:id]
   end
 

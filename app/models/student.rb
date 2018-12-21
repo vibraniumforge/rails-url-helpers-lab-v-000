@@ -3,8 +3,4 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def toggle_active
-    update active: !active
-  end
-
 end
